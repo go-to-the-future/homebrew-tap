@@ -1,28 +1,28 @@
 class Noenv < Formula
   desc "Delete your .env files. AI-safe secret manager."
   homepage "https://github.com/go-to-the-future/noenv"
-  version "0.2.0"
+  version "0.3.0"
   license "MIT"
 
   on_macos do
     on_arm do
-      url "https://github.com/go-to-the-future/noenv/releases/download/v0.2.0/noenv-aarch64-macos.tar.gz"
-      sha256 "368f054578043a6c2477e491d77a1dc7b8665c55310d0dc1447d5d718fd24581"
+      url "https://github.com/go-to-the-future/noenv/releases/download/v0.3.0/noenv-aarch64-macos.tar.gz"
+      sha256 "68504c46adec014ecac7eeac894a7f3348266d478d3aaf355f05eb27283229a7"
     end
     on_intel do
-      url "https://github.com/go-to-the-future/noenv/releases/download/v0.2.0/noenv-x86_64-macos.tar.gz"
-      sha256 "fe9dad429072e5a4f89929327ff870c8e88bb0d9eccbafb1a38a157a84f41f5b"
+      url "https://github.com/go-to-the-future/noenv/releases/download/v0.3.0/noenv-x86_64-macos.tar.gz"
+      sha256 "e8b12e189d2c8c5d26861346fa3ddfc47dd0276ddc26796928c0ccc3ab5a92e3"
     end
   end
 
   on_linux do
     on_arm do
-      url "https://github.com/go-to-the-future/noenv/releases/download/v0.2.0/noenv-aarch64-linux.tar.gz"
-      sha256 "6d5369677dd2270ab6750365d548f38055d07a9974a72a986adde3af79438bb2"
+      url "https://github.com/go-to-the-future/noenv/releases/download/v0.3.0/noenv-aarch64-linux.tar.gz"
+      sha256 "77d3d563669f241517cf5facab80dedc4ec923822a0fe709e90ca9af15e2d2b1"
     end
     on_intel do
-      url "https://github.com/go-to-the-future/noenv/releases/download/v0.2.0/noenv-x86_64-linux.tar.gz"
-      sha256 "ea5ff592dfc4120af09508b9f14effaa34ea790c91aed109ee6b76bd331e5370"
+      url "https://github.com/go-to-the-future/noenv/releases/download/v0.3.0/noenv-x86_64-linux.tar.gz"
+      sha256 "3a1fbd0f25c5e72d3791aff2569813aa0cbdd66de1ab4d79236186a91857ff14"
     end
   end
 
@@ -31,6 +31,6 @@ class Noenv < Formula
   end
 
   test do
-    assert_match "noenv", shell_output("#{bin}/noenv 2>&1", 1)
+    assert_match "noenv", shell_output("#{bin}/noenv 2>&1")
   end
 end
