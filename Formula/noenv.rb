@@ -1,28 +1,28 @@
 class Noenv < Formula
   desc "Delete your .env files. AI-safe secret manager with value bypass."
   homepage "https://github.com/go-to-the-future/noenv"
-  version "0.4.0"
+  version "0.4.1"
   license "MIT"
 
   on_macos do
     on_arm do
-      url "https://github.com/go-to-the-future/noenv/releases/download/v0.4.0/noenv-aarch64-macos.tar.gz"
-      sha256 "14323c7031b9693471cd953dfbe58ded2a91a5f221cdbc01c1327f8bbd9a1e25"
+      url "https://github.com/go-to-the-future/noenv/releases/download/v0.4.1/noenv-aarch64-macos.tar.gz"
+      sha256 "4fe3f0bfabbf59ab1e56fc80c15a02729a09e41de51716e2c0598e511aa187fa"
     end
     on_intel do
-      url "https://github.com/go-to-the-future/noenv/releases/download/v0.4.0/noenv-x86_64-macos.tar.gz"
-      sha256 "6634b5afea2da915b9f6a1a039226fb0f90ba8736031eb92298c49946f9f9d46"
+      url "https://github.com/go-to-the-future/noenv/releases/download/v0.4.1/noenv-x86_64-macos.tar.gz"
+      sha256 "2b8c27c396f78d334e5e3ac93a4b06b815287a9d819a9993895ef8fd2bd1d0ff"
     end
   end
 
   on_linux do
     on_arm do
-      url "https://github.com/go-to-the-future/noenv/releases/download/v0.4.0/noenv-aarch64-linux.tar.gz"
-      sha256 "05cd9909bc0e1c0318069510f46ac31315f7249dfb4b89a678f5442fc78a44de"
+      url "https://github.com/go-to-the-future/noenv/releases/download/v0.4.1/noenv-aarch64-linux.tar.gz"
+      sha256 "2f4dc917a1609925f012192dd197cc9ab62b4de84152e5beb25476f024158ead"
     end
     on_intel do
-      url "https://github.com/go-to-the-future/noenv/releases/download/v0.4.0/noenv-x86_64-linux.tar.gz"
-      sha256 "4693b095aaf1dce985f0ec28148bf62a6b504d7de9826235a6e869c1a4f943bb"
+      url "https://github.com/go-to-the-future/noenv/releases/download/v0.4.1/noenv-x86_64-linux.tar.gz"
+      sha256 "698b8ce9244c03fa3e3c6f1aa386f2870ff3aae8342897e58b535436385bfef1"
     end
   end
 
